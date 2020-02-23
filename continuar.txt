@@ -1,0 +1,1 @@
+Ainda na pasta consulta vamos criar um arquivo com o nome de consulta.component.ts, e depois vamos adicionar o código abaixo.
