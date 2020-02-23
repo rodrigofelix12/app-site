@@ -18,8 +18,8 @@ import { Observable } from 'rxjs/Observable';
   })
   export class CadastroComponent implements OnInit {
 
-    private titulo:string;
-    private pessoa:Pessoa = new Pessoa();
+    public titulo:string;
+    public pessoa:Pessoa = new Pessoa();
 
     constructor(private pessoaService: PessoaService,
                 private router: Router,

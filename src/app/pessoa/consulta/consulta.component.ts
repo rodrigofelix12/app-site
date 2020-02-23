@@ -15,8 +15,8 @@ import {Response} from '../../services/response';
   })
   export class ConsultaComponent implements OnInit {
 
-    private pessoas: Pessoa[] = new Array();
-    private titulo:string;
+    public pessoas: Pessoa[] = new Array();
+    public titulo:string;
 
     constructor(private pessoaService: PessoaService,
                 private router: Router){}

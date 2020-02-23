@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
-import { HttpModule } from '@angular/http'
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,19 +12,21 @@ import { ConfigService } from './services/config.service';
 import { PessoaService } from './services/pessoa.service';
 import { from } from 'rxjs';
 import { CadastroComponent } from './pessoa/cadastro/cadastro.component';
+import { routing } from 'src/app.routes';
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpModule,
+    AppComponent,
     MenuComponent,
     HomeComponent,
     ConsultaComponent,
     CadastroComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpModule,
+    FormsModule,
+    routing
   ],
   providers: [ConfigService, PessoaService],
   bootstrap: [AppComponent]

@@ -5,5 +5,5 @@ import { Component } from "@angular/core";
   templateUrl: './home.component.html'
 })
 export class HomeComponent{
-  private mensagem:string = "Página Inicial.";
+  public mensagem:string = "Página Inicial.";
 }
