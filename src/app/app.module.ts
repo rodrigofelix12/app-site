@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
+import { HttpModule } from '@angular/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,7 @@ import { PessoaService } from './services/pessoa.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient
+    HttpModule
   ],
   providers: [ConfigService, PessoaService],
   bootstrap: [AppComponent]
